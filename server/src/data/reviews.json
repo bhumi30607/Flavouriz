@@ -1,0 +1,50 @@
+[
+  {
+    "id": "rev-001",
+    "recipeId": "recipe-002",
+    "userId": "user-chef-002",
+    "userName": "Sarah Jenkins",
+    "userUsername": "sarah_cooks",
+    "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
+    "rating": 5,
+    "comment": "Absolutely authentic! The technique of letting the pan cool before adding the egg emulsion prevents any scrambling. Pure perfection!",
+    "createdAt": "2026-01-17T12:00:00.000Z",
+    "updatedAt": "2026-01-17T12:00:00.000Z"
+  },
+  {
+    "id": "rev-002",
+    "recipeId": "recipe-002",
+    "userId": "user-foodie-003",
+    "userName": "Alex Rivera",
+    "userUsername": "alex_foodie",
+    "userAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    "rating": 5,
+    "comment": "Best carbonara recipe on the internet. Guanciale makes all the difference compared to regular bacon.",
+    "createdAt": "2026-01-18T14:30:00.000Z",
+    "updatedAt": "2026-01-18T14:30:00.000Z"
+  },
+  {
+    "id": "rev-003",
+    "recipeId": "recipe-001",
+    "userId": "user-admin-001",
+    "userName": "Chef Alessandro Rossi",
+    "userUsername": "admin",
+    "userAvatar": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=400&q=80",
+    "rating": 5,
+    "comment": "The touch of vanilla bean and using thick-cut sourdough elevates this weekend staple to restaurant brunch standard.",
+    "createdAt": "2026-01-19T10:15:00.000Z",
+    "updatedAt": "2026-01-19T10:15:00.000Z"
+  },
+  {
+    "id": "rev-004",
+    "recipeId": "recipe-003",
+    "userId": "user-chef-002",
+    "userName": "Sarah Jenkins",
+    "userUsername": "sarah_cooks",
+    "userAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
+    "rating": 5,
+    "comment": "The fenugreek (kasuri methi) at the end brings that iconic restaurant aroma right into my kitchen!",
+    "createdAt": "2026-01-20T21:00:00.000Z",
+    "updatedAt": "2026-01-20T21:00:00.000Z"
+  }
+]

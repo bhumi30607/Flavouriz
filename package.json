@@ -1,0 +1,36 @@
+{
+  "name": "flavouriz",
+  "version": "1.0.0",
+  "description": "Flavouriz - Recipe Sharing & Cooking Community Platform (Full-Stack College Project)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "npm --prefix server install && npm --prefix client install",
+    "seed": "npm --prefix server run seed",
+    "server": "npm --prefix server run start",
+    "server:dev": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "client:build": "npm --prefix client run build",
+    "test": "npm --prefix server run test",
+    "demo:http": "node learning-examples/http-server.js",
+    "demo:events": "node learning-examples/event-emitter.js",
+    "demo:fs": "node learning-examples/file-system.js",
+    "demo:stream": "node learning-examples/file-stream.js",
+    "demo:buffer": "node learning-examples/buffer-demo.js",
+    "demo:event-loop": "node learning-examples/event-loop-demo.js",
+    "demo:async-error": "node learning-examples/async-error-demo.js",
+    "demo:modules:cjs": "node learning-examples/module-examples/commonjs-demo.cjs",
+    "demo:modules:esm": "node learning-examples/module-examples/esmodule-demo.mjs"
+  },
+  "keywords": [
+    "recipe-sharing",
+    "college-project",
+    "express",
+    "react",
+    "tailwind",
+    "json-persistence",
+    "rest-api"
+  ],
+  "author": "Flavouriz Team",
+  "license": "ISC"
+}

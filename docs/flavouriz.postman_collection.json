@@ -1,0 +1,149 @@
+{
+  "info": {
+    "name": "Flavouriz API Test Collection",
+    "description": "Full-Stack College Project API Suite for Flavouriz Recipe Sharing & Cooking Community",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/health",
+          "host": ["{{baseUrl}}"],
+          "path": ["health"]
+        }
+      }
+    },
+    {
+      "name": "Auth - Register New User",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Elena Rostova\",\n  \"username\": \"elena_chef\",\n  \"email\": \"elena@flavouriz.com\",\n  \"password\": \"Password@123\",\n  \"bio\": \"Baker & culinary explorer\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/auth/register",
+          "host": ["{{baseUrl}}"],
+          "path": ["auth", "register"]
+        }
+      }
+    },
+    {
+      "name": "Auth - Login as Admin",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"admin@flavouriz.com\",\n  \"password\": \"Admin@12345\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/auth/login",
+          "host": ["{{baseUrl}}"],
+          "path": ["auth", "login"]
+        }
+      }
+    },
+    {
+      "name": "Auth - Current Profile (Me)",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "Authorization", "value": "Bearer {{token}}" }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/auth/me",
+          "host": ["{{baseUrl}}"],
+          "path": ["auth", "me"]
+        }
+      }
+    },
+    {
+      "name": "Recipes - Get All Recipes (Filtered)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/recipes?category=Dinner&sort=highest_rated&limit=9",
+          "host": ["{{baseUrl}}"],
+          "path": ["recipes"],
+          "query": [
+            { "key": "category", "value": "Dinner" },
+            { "key": "sort", "value": "highest_rated" },
+            { "key": "limit", "value": "9" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Recipes - Get Recipe By ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/recipes/recipe-002",
+          "host": ["{{baseUrl}}"],
+          "path": ["recipes", "recipe-002"]
+        }
+      }
+    },
+    {
+      "name": "Favorites - Get My Cookbook",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "Authorization", "value": "Bearer {{token}}" }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/favorites",
+          "host": ["{{baseUrl}}"],
+          "path": ["favorites"]
+        }
+      }
+    },
+    {
+      "name": "Reviews - Add Recipe Review",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Authorization", "value": "Bearer {{token}}" },
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"rating\": 5,\n  \"comment\": \"Delicious, tried with homemade pasta!\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/recipes/recipe-002/reviews",
+          "host": ["{{baseUrl}}"],
+          "path": ["recipes", "recipe-002", "reviews"]
+        }
+      }
+    },
+    {
+      "name": "Admin - Get Stats (Requires Admin Role)",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "Authorization", "value": "Bearer {{adminToken}}" }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/admin/stats",
+          "host": ["{{baseUrl}}"],
+          "path": ["admin", "stats"]
+        }
+      }
+    }
+  ],
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:5000/api" },
+    { "key": "token", "value": "" },
+    { "key": "adminToken", "value": "" }
+  ]
+}

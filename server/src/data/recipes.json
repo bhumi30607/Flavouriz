@@ -1,0 +1,1280 @@
+[
+  {
+    "id": "recipe-001",
+    "title": "Artisan Sourdough French Toast with Berry Compote",
+    "description": "Golden, custard-soaked thick sourdough slices browned to perfection in browned butter, crowned with warm balsamic macerated berries and pure maple syrup.",
+    "category": "Breakfast",
+    "cuisine": "French",
+    "difficulty": "Easy",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 15,
+    "servings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=900&q=80",
+    "authorId": "user-chef-002",
+    "authorName": "Sarah Jenkins",
+    "averageRating": 4.8,
+    "reviewsCount": 3,
+    "favoritesCount": 12,
+    "isFeatured": true,
+    "tags": [
+      "Brunch",
+      "Sweet",
+      "Vegetarian",
+      "Quick"
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Sourdough bread, thick sliced",
+        "amount": "8",
+        "unit": "slices"
+      },
+      {
+        "id": 2,
+        "name": "Large free-range eggs",
+        "amount": "4",
+        "unit": "large"
+      },
+      {
+        "id": 3,
+        "name": "Whole milk or heavy cream",
+        "amount": "1",
+        "unit": "cup"
+      },
+      {
+        "id": 4,
+        "name": "Pure vanilla bean paste",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "id": 5,
+        "name": "Ground Ceylon cinnamon",
+        "amount": "1/2",
+        "unit": "tsp"
+      },
+      {
+        "id": 6,
+        "name": "Salted butter for griddle",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "id": 7,
+        "name": "Mixed fresh berries (blueberries, raspberries)",
+        "amount": "2",
+        "unit": "cups"
+      },
+      {
+        "id": 8,
+        "name": "Dark maple syrup",
+        "amount": "1/2",
+        "unit": "cup"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "instruction": "In a wide shallow bowl, vigorously whisk eggs, milk, vanilla bean paste, and cinnamon until fully homogenous and airy."
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Heat a heavy cast iron skillet or griddle over medium heat and melt one tablespoon of butter until foamy."
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Dip sourdough slices into the egg custard for 15 seconds per side, allowing it to penetrate without becoming overly soggy."
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Fry slices for 3 to 4 minutes per side until deeply golden and crisp along the crust."
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Simmer fresh berries with a splash of maple syrup in a small saucepan for 3 minutes until gently burst. Spoon over French toast and serve warm."
+      }
+    ],
+    "createdAt": "2026-01-15T09:00:00.000Z",
+    "updatedAt": "2026-01-15T09:00:00.000Z"
+  },
+  {
+    "id": "recipe-002",
+    "title": "Authentic Roman Spaghetti alla Carbonara",
+    "description": "The definitive Italian classic prepared the time-honored way with crisp cured guanciale, velvety egg yolk and pecorino romano emulsion, and freshly cracked black pepper.",
+    "category": "Dinner",
+    "cuisine": "Italian",
+    "difficulty": "Medium",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 15,
+    "servings": 2,
+    "imageUrl": "https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=900&q=80",
+    "authorId": "user-admin-001",
+    "authorName": "Chef Alessandro Rossi",
+    "averageRating": 5,
+    "reviewsCount": 5,
+    "favoritesCount": 23,
+    "isFeatured": true,
+    "tags": [
+      "Pasta",
+      "Traditional",
+      "Quick Dinner",
+      "Italian Classics"
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Bronze-cut spaghetti",
+        "amount": "250",
+        "unit": "g"
+      },
+      {
+        "id": 2,
+        "name": "Guanciale (or cured pork jowl)",
+        "amount": "120",
+        "unit": "g"
+      },
+      {
+        "id": 3,
+        "name": "Fresh egg yolks",
+        "amount": "4",
+        "unit": "yolks"
+      },
+      {
+        "id": 4,
+        "name": "Freshly grated Pecorino Romano cheese",
+        "amount": "60",
+        "unit": "g"
+      },
+      {
+        "id": 5,
+        "name": "Whole black peppercorns, coarsely crushed",
+        "amount": "2",
+        "unit": "tsp"
+      },
+      {
+        "id": 6,
+        "name": "Sea salt for pasta water",
+        "amount": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "instruction": "Bring a pot of water to a rolling boil with moderate salt. Drop the spaghetti and cook until 2 minutes shy of al dente."
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Cut guanciale into thick matchsticks and gently render in a cold skillet over low-medium heat until golden and crispy outside, tender inside. Remove pan from direct heat."
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "In a glass bowl, whisk the egg yolks with 50g of grated Pecorino and freshly toasted cracked pepper to form a rich, thick paste."
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Transfer al dente pasta directly into the warm skillet with guanciale fat, stirring with 2 tablespoons of starchy pasta water."
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Allow pan to cool slightly off heat (under 65°C to avoid scrambling), then stir in the egg and cheese mixture rapidly. Toss until a glistening silky cream coats every strand."
+      }
+    ],
+    "createdAt": "2026-01-16T18:30:00.000Z",
+    "updatedAt": "2026-10-25T12:37:29.473Z"
+  },
+  {
+    "id": "recipe-003",
+    "title": "Slow-Simmered Chicken Tikka Masala",
+    "description": "Tender tandoori-spiced chicken thighs charred to perfection and simmered in an aromatic velvety tomato, cream, fenugreek, and garam masala gravy.",
+    "category": "Dinner",
+    "cuisine": "Indian",
+    "difficulty": "Medium",
+    "prepTimeMinutes": 30,
+    "cookTimeMinutes": 40,
+    "servings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=900&q=80",
+    "authorId": "user-foodie-003",
+    "authorName": "Alex Rivera",
+    "averageRating": 4.9,
+    "reviewsCount": 4,
+    "favoritesCount": 18,
+    "isFeatured": true,
+    "tags": [
+      "Curry",
+      "Spicy",
+      "Comfort Food",
+      "Dinner Party"
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Boneless chicken thighs, cubed",
+        "amount": "700",
+        "unit": "g"
+      },
+      {
+        "id": 2,
+        "name": "Greek yogurt for marinade",
+        "amount": "1/2",
+        "unit": "cup"
+      },
+      {
+        "id": 3,
+        "name": "Ginger-garlic paste",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "id": 4,
+        "name": "Kashmiri red chili powder",
+        "amount": "2",
+        "unit": "tsp"
+      },
+      {
+        "id": 5,
+        "name": "Crushed San Marzano tomatoes",
+        "amount": "400",
+        "unit": "g"
+      },
+      {
+        "id": 6,
+        "name": "Heavy whipping cream",
+        "amount": "1/2",
+        "unit": "cup"
+      },
+      {
+        "id": 7,
+        "name": "Kasuri Methi (dried fenugreek leaves)",
+        "amount": "1",
+        "unit": "tbsp"
+      },
+      {
+        "id": 8,
+        "name": "Garam Masala powder",
+        "amount": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "instruction": "Marinate chicken with yogurt, half of the ginger-garlic paste, chili, and cumin for at least 30 minutes."
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Broil or sear chicken in batches in a sizzling hot skillet until deeply charred at the edges. Set aside."
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "In a wide heavy pot, melt butter, sauté remaining ginger-garlic and onions until caramelized, then stir in spices and tomato puree."
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Simmer gravy gently for 20 minutes until oil separates from the edges, then blend smooth for luxury restaurant texture."
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Fold in the charred chicken pieces, pour in heavy cream, and finish with crushed kasuri methi. Serve piping hot with garlic naan."
+      }
+    ],
+    "createdAt": "2026-01-18T19:00:00.000Z",
+    "updatedAt": "2026-01-18T19:00:00.000Z"
+  },
+  {
+    "id": "recipe-004",
+    "title": "Baja Style Crispy Fish Tacos with Chipotle Crema",
+    "description": "Beer-battered flaky white fish fried golden, nestled in warm corn tortillas with crunchy shredded red cabbage, pickled red onions, and smoky chipotle lime crema.",
+    "category": "Lunch",
+    "cuisine": "Mexican",
+    "difficulty": "Medium",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 15,
+    "servings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=900&q=80",
+    "authorId": "user-foodie-003",
+    "authorName": "Alex Rivera",
+    "averageRating": 4.7,
+    "reviewsCount": 3,
+    "favoritesCount": 15,
+    "isFeatured": false,
+    "tags": [
+      "Seafood",
+      "Street Food",
+      "Crispy",
+      "Summer"
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Fresh white fish fillets (cod or tilapia)",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "id": 2,
+        "name": "All-purpose flour",
+        "amount": "1",
+        "unit": "cup"
+      },
+      {
+        "id": 3,
+        "name": "Chilled Mexican lager beer",
+        "amount": "1",
+        "unit": "cup"
+      },
+      {
+        "id": 4,
+        "name": "Ground cumin & Mexican oregano",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "id": 5,
+        "name": "Corn tortillas",
+        "amount": "12",
+        "unit": "small"
+      },
+      {
+        "id": 6,
+        "name": "Shredded red cabbage",
+        "amount": "2",
+        "unit": "cups"
+      },
+      {
+        "id": 7,
+        "name": "Sour cream & chipotle peppers in adobo",
+        "amount": "1/2",
+        "unit": "cup"
+      },
+      {
+        "id": 8,
+        "name": "Fresh limes and cilantro",
+        "amount": "2",
+        "unit": "limes"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "instruction": "Blend sour cream, chipotle pepper, lime juice, and sea salt into a smooth, vibrant pinkish crema."
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Whisk flour, baking powder, spices, and cold beer together until a smooth pancake-like batter forms."
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Dredge fish strips in light flour, dip into beer batter, and fry in 180°C oil for 4 minutes until golden and shattering crisp."
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Warm corn tortillas over an open gas flame or dry skillet until pliable and blistered."
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Assemble tacos with crispy fish, shredded cabbage slaw, fresh cilantro sprigs, and generous drizzles of smoky crema."
+      }
+    ],
+    "createdAt": "2026-01-20T13:00:00.000Z",
+    "updatedAt": "2026-01-20T13:00:00.000Z"
+  },
+  {
+    "id": "recipe-005",
+    "title": "Creamy Tuscan Sun-Dried Tomato Salmon",
+    "description": "Pan-seared Atlantic salmon fillets with crackling skin resting in a luscious garlic, sun-dried tomato, baby spinach, and parmesan cream reduction.",
+    "category": "Dinner",
+    "cuisine": "Mediterranean",
+    "difficulty": "Easy",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "imageUrl": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=80",
+    "authorId": "user-admin-001",
+    "authorName": "Chef Alessandro Rossi",
+    "averageRating": 4.9,
+    "reviewsCount": 3,
+    "favoritesCount": 22,
+    "isFeatured": false,
+    "tags": [
+      "Keto",
+      "Gluten-Free",
+      "High-Protein",
+      "Quick Dinner"
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Atlantic salmon fillets, skin-on",
+        "amount": "3",
+        "unit": "fillets"
+      },
+      {
+        "id": 2,
+        "name": "Extra virgin olive oil",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "id": 3,
+        "name": "Sun-dried tomatoes in oil, chopped",
+        "amount": "1/3",
+        "unit": "cup"
+      },
+      {
+        "id": 4,
+        "name": "Minced garlic cloves",
+        "amount": "4",
+        "unit": "cloves"
+      },
+      {
+        "id": 5,
+        "name": "Heavy cream",
+        "amount": "1",
+        "unit": "cup"
+      },
+      {
+        "id": 6,
+        "name": "Fresh baby spinach",
+        "amount": "3",
+        "unit": "cups"
+      },
+      {
+        "id": 7,
+        "name": "Grated Parmigiano-Reggiano",
+        "amount": "1/2",
+        "unit": "cup"
+      },
+      {
+        "id": 8,
+        "name": "Fresh lemon juice",
+        "amount": "1",
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "instruction": "Pat salmon fillets dry with paper towels; season both sides generously with sea salt and cracked black pepper."
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Sear salmon skin-side down in a hot skillet with olive oil for 5 minutes, flip and cook 3 minutes until medium; transfer to a plate."
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "In the same skillet, sauté garlic and sun-dried tomatoes for 1 minute until fragrant."
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Pour in heavy cream, bring to a gentle simmer, and stir in parmesan cheese until melted and velvety."
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Add spinach until wilted, nestle salmon back into the sauce, and spoon hot sauce over the top before serving."
+      }
+    ],
+    "createdAt": "2026-01-22T20:15:00.000Z",
+    "updatedAt": "2026-01-22T20:15:00.000Z"
+  },
+  {
+    "id": "recipe-006",
+    "title": "Classic Italian Tiramisu with Mascarpone Cream",
+    "description": "The quintessential Italian dessert crafted with Savoiardi ladyfingers bathed in dark espresso and Marsala, layered with cloud-like mascarpone sabayon and dutched cocoa powder.",
+    "category": "Desserts",
+    "cuisine": "Italian",
+    "difficulty": "Medium",
+    "prepTimeMinutes": 30,
+    "cookTimeMinutes": 0,
+    "servings": 8,
+    "imageUrl": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=900&q=80",
+    "authorId": "user-chef-002",
+    "authorName": "Sarah Jenkins",
+    "averageRating": 5,
+    "reviewsCount": 6,
+    "favoritesCount": 31,
+    "isFeatured": true,
+    "tags": [
+      "No-Bake",
+      "Classic",
+      "Coffee",
+      "Party Dessert"
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Italian Ladyfingers (Savoiardi)",
+        "amount": "24",
+        "unit": "pieces"
+      },
+      {
+        "id": 2,
+        "name": "Mascarpone cheese, chilled",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "id": 3,
+        "name": "Large pasteurized egg yolks",
+        "amount": "4",
+        "unit": "yolks"
+      },
+      {
+        "id": 4,
+        "name": "Granulated sugar",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "id": 5,
+        "name": "Freshly brewed strong espresso, cooled",
+        "amount": "1.5",
+        "unit": "cups"
+      },
+      {
+        "id": 6,
+        "name": "Marsala wine or dark rum",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "id": 7,
+        "name": "Heavy whipping cream",
+        "amount": "200",
+        "unit": "ml"
+      },
+      {
+        "id": 8,
+        "name": "Dutch-process unsweetened cocoa powder",
+        "amount": "3",
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "instruction": "Whisk egg yolks and sugar over a double boiler until pale, thick, and sugar granules dissolve completely."
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Fold mascarpone cheese gently into the yolk sabayon until glossy and lump-free."
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "In a separate cold bowl, whip heavy cream to medium peaks; gently fold into the mascarpone cream."
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Combine espresso and Marsala. Quickly dip ladyfingers (one second per side) and line the bottom of an 8x8 baking dish."
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Spread half the mascarpone cream, repeat with a second dipped layer, top with remaining cream, and refrigerate for at least 6 hours. Dust with cocoa powder before slicing."
+      }
+    ],
+    "createdAt": "2026-01-25T16:00:00.000Z",
+    "updatedAt": "2026-01-25T16:00:00.000Z"
+  },
+  {
+    "id": "recipe-007",
+    "title": "Crispy Japanese Vegetable Tempura with Tentsuyu Dip",
+    "description": "Lacy, feather-light tempura batter hugging seasonal vegetables like sweet potato, asparagus, and shiitake mushrooms, served with dashi mirin dipping sauce.",
+    "category": "Snacks",
+    "cuisine": "Japanese",
+    "difficulty": "Hard",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 15,
+    "servings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=900&q=80",
+    "authorId": "user-foodie-003",
+    "authorName": "Alex Rivera",
+    "averageRating": 4.6,
+    "reviewsCount": 2,
+    "favoritesCount": 10,
+    "isFeatured": false,
+    "tags": [
+      "Vegetarian",
+      "Crispy",
+      "Appetizer",
+      "Japanese"
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Assorted vegetables (kaboocha, lotus root, asparagus)",
+        "amount": "400",
+        "unit": "g"
+      },
+      {
+        "id": 2,
+        "name": "Ice cold carbonated water",
+        "amount": "1",
+        "unit": "cup"
+      },
+      {
+        "id": 3,
+        "name": "Cake flour or low-protein wheat flour",
+        "amount": "1",
+        "unit": "cup"
+      },
+      {
+        "id": 4,
+        "name": "Egg yolk, chilled",
+        "amount": "1",
+        "unit": "yolk"
+      },
+      {
+        "id": 5,
+        "name": "Neutral oil for frying",
+        "amount": "4",
+        "unit": "cups"
+      },
+      {
+        "id": 6,
+        "name": "Dashi stock, soy sauce, and mirin for sauce",
+        "amount": "1/2",
+        "unit": "cup"
+      },
+      {
+        "id": 7,
+        "name": "Grated daikon radish",
+        "amount": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "instruction": "Slice vegetables thinly and uniformly, dusting them lightly with cornstarch to ensure batter adhesion."
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Mix ice water and egg yolk, add flour, and stir with chopsticks only 5-6 times. Leave small flour lumps — do not overmix."
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Heat frying oil to exactly 175°C."
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Dip vegetable pieces into batter and gently lower into oil; fry for 2 minutes until pale and ultra-crisp."
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Drain on a wire rack and serve immediately with tentsuyu dipping sauce and grated daikon."
+      }
+    ],
+    "createdAt": "2026-02-01T15:00:00.000Z",
+    "updatedAt": "2026-10-25T12:34:28.973Z"
+  },
+  {
+    "id": "recipe-008",
+    "title": "Creamy Guacamole with Warm Fresh Corn Chips",
+    "description": "Mouthwatering traditional molcajete guacamole made with Haas avocados, diced jalapeños, red onions, fresh lime, and sea salt.",
+    "category": "Snacks",
+    "cuisine": "Mexican",
+    "difficulty": "Easy",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 0,
+    "servings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=80",
+    "authorId": "user-foodie-003",
+    "authorName": "Alex Rivera",
+    "averageRating": 4.9,
+    "reviewsCount": 3,
+    "favoritesCount": 14,
+    "isFeatured": false,
+    "tags": [
+      "Vegan",
+      "Gluten-Free",
+      "Quick",
+      "Party Snack"
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Ripe Haas avocados",
+        "amount": "3",
+        "unit": "large"
+      },
+      {
+        "id": 2,
+        "name": "Fresh lime juice",
+        "amount": "2",
+        "unit": "limes"
+      },
+      {
+        "id": 3,
+        "name": "Finely diced red onion",
+        "amount": "1/4",
+        "unit": "cup"
+      },
+      {
+        "id": 4,
+        "name": "Fresh jalapeño, seeded and minced",
+        "amount": "1",
+        "unit": "chili"
+      },
+      {
+        "id": 5,
+        "name": "Chopped fresh cilantro",
+        "amount": "1/3",
+        "unit": "cup"
+      },
+      {
+        "id": 6,
+        "name": "Flaky Maldon sea salt",
+        "amount": "1/2",
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "instruction": "In a stone molcajete or glass bowl, crush half the red onion, cilantro, and jalapeño with sea salt to release aromatic juices."
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Halve and pit avocados, then scoop flesh into the bowl."
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Mash coarsely with a fork, retaining distinct tender avocado chunks."
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Fold in fresh lime juice, remaining onion, and cilantro. Taste and adjust salt."
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Garnish with extra cilantro leaves and serve with freshly baked tortilla chips."
+      }
+    ],
+    "createdAt": "2026-02-05T11:00:00.000Z",
+    "updatedAt": "2026-02-05T11:00:00.000Z"
+  },
+  {
+    "id": "recipe-009",
+    "title": "Mediterranean Shakshuka with Poached Eggs & Feta",
+    "description": "North African and Mediterranean brunch staple of eggs gently poached in a simmering spiced stew of crushed tomatoes, sweet bell peppers, cumin, paprika, and creamy crumbled feta.",
+    "category": "Breakfast",
+    "cuisine": "Mediterranean",
+    "difficulty": "Easy",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 20,
+    "servings": 3,
+    "imageUrl": "https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=900&q=80",
+    "authorId": "user-chef-002",
+    "authorName": "Sarah Jenkins",
+    "averageRating": 4.8,
+    "reviewsCount": 2,
+    "favoritesCount": 16,
+    "isFeatured": false,
+    "tags": [
+      "Brunch",
+      "Vegetarian",
+      "One-Pan",
+      "Healthy"
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Fresh eggs",
+        "amount": "5",
+        "unit": "large"
+      },
+      {
+        "id": 2,
+        "name": "Canned whole peeled plum tomatoes",
+        "amount": "800",
+        "unit": "g"
+      },
+      {
+        "id": 3,
+        "name": "Red bell peppers, thinly sliced",
+        "amount": "2",
+        "unit": "peppers"
+      },
+      {
+        "id": 4,
+        "name": "Yellow onion, diced",
+        "amount": "1",
+        "unit": "medium"
+      },
+      {
+        "id": 5,
+        "name": "Smoked paprika & ground cumin",
+        "amount": "1",
+        "unit": "tsp each"
+      },
+      {
+        "id": 6,
+        "name": "Crumbled Greek sheep feta cheese",
+        "amount": "80",
+        "unit": "g"
+      },
+      {
+        "id": 7,
+        "name": "Fresh crusty pita or sourdough bread",
+        "amount": "1",
+        "unit": "loaf"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "instruction": "Heat olive oil in a wide cast-iron skillet over medium heat. Sauté sliced bell peppers and onions for 8 minutes until sweet and tender."
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Stir in minced garlic, cumin, paprika, and chili flakes; toast for 60 seconds."
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Crush the tomatoes into the pan by hand and simmer for 10 minutes until thick and flavorful."
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Create five small wells in the sauce with the back of a spoon and crack an egg into each well."
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Cover and simmer on low for 6-8 minutes until whites are set but yolks remain runny. Scatter with feta and cilantro, and serve right from the skillet."
+      }
+    ],
+    "createdAt": "2026-02-10T08:30:00.000Z",
+    "updatedAt": "2026-02-10T08:30:00.000Z"
+  },
+  {
+    "id": "recipe-010",
+    "title": "Decadent Molten Dark Chocolate Lava Cakes",
+    "description": "Individual warm French chocolate cakes with a delicate cake shell and an unctuous molten chocolate center that flows luxuriously at first fork-cut.",
+    "category": "Desserts",
+    "cuisine": "French",
+    "difficulty": "Medium",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 12,
+    "servings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80",
+    "authorId": "user-chef-002",
+    "authorName": "Sarah Jenkins",
+    "averageRating": 5,
+    "reviewsCount": 4,
+    "favoritesCount": 30,
+    "isFeatured": true,
+    "tags": [
+      "Chocolate",
+      "French Pastry",
+      "Valentine",
+      "Baking"
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "70% Valrhona dark chocolate",
+        "amount": "180",
+        "unit": "g"
+      },
+      {
+        "id": 2,
+        "name": "Unsalted European butter",
+        "amount": "100",
+        "unit": "g"
+      },
+      {
+        "id": 3,
+        "name": "Confectioners powdered sugar",
+        "amount": "1/2",
+        "unit": "cup"
+      },
+      {
+        "id": 4,
+        "name": "Whole eggs plus egg yolks",
+        "amount": "2 whole + 2 yolks",
+        "unit": ""
+      },
+      {
+        "id": 5,
+        "name": "All-purpose flour",
+        "amount": "6",
+        "unit": "tbsp"
+      },
+      {
+        "id": 6,
+        "name": "Madagascar vanilla bean extract",
+        "amount": "1",
+        "unit": "tsp"
+      },
+      {
+        "id": 7,
+        "name": "Vanilla bean gelato for serving",
+        "amount": "4",
+        "unit": "scoops"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "instruction": "Butter four ramekins thoroughly and dust with cocoa powder, tapping out any excess."
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Gently melt dark chocolate and butter together in a heatproof bowl set over simmering water."
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Whisk powdered sugar, whole eggs, yolks, and vanilla until smooth and slightly frothy."
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Pour chocolate mixture into eggs, fold in flour gently until just combined. Divide among ramekins."
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Bake at 220°C for exactly 11 to 12 minutes until sides are firm but center is jiggly. Invert onto dessert plates and serve immediately with vanilla bean gelato."
+      }
+    ],
+    "createdAt": "2026-02-14T20:00:00.000Z",
+    "updatedAt": "2026-10-26T12:08:43.649Z"
+  },
+  {
+    "id": "recipe-011",
+    "title": "Aromatic Thai Green Curry with Jasmine Rice",
+    "description": "Fragrant lemongrass, galangal, kaffir lime leaves, and green chillies pounded into a curry paste, cooked with coconut milk, bamboo shoots, and tender chicken.",
+    "category": "Dinner",
+    "cuisine": "Asian",
+    "difficulty": "Medium",
+    "prepTimeMinutes": 20,
+    "cookTimeMinutes": 20,
+    "servings": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=900&q=80",
+    "authorId": "user-foodie-003",
+    "authorName": "Alex Rivera",
+    "averageRating": 4.8,
+    "reviewsCount": 3,
+    "favoritesCount": 17,
+    "isFeatured": false,
+    "tags": [
+      "Spicy",
+      "Curry",
+      "Thai",
+      "Gluten-Free"
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Chicken breast or firm tofu, sliced",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "id": 2,
+        "name": "Authentic Thai green curry paste",
+        "amount": "3",
+        "unit": "tbsp"
+      },
+      {
+        "id": 3,
+        "name": "Full-fat coconut milk",
+        "amount": "400",
+        "unit": "ml"
+      },
+      {
+        "id": 4,
+        "name": "Thai eggplant or bamboo shoots",
+        "amount": "1",
+        "unit": "cup"
+      },
+      {
+        "id": 5,
+        "name": "Kaffir lime leaves, torn",
+        "amount": "4",
+        "unit": "leaves"
+      },
+      {
+        "id": 6,
+        "name": "Fish sauce and palm sugar",
+        "amount": "1",
+        "unit": "tbsp each"
+      },
+      {
+        "id": 7,
+        "name": "Fresh Thai sweet basil leaves",
+        "amount": "1",
+        "unit": "cup"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "instruction": "Heat 3 tablespoons of thick coconut cream in a wok until it splits and fragrant oil glistens."
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Add green curry paste and fry for 2 minutes until intensely aromatic."
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Add chicken slices and toss until coated and opaque."
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Pour in remaining coconut milk, add eggplant and bamboo shoots, and simmer for 10 minutes."
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Season with fish sauce, palm sugar, and torn kaffir lime leaves. Remove from heat and stir in fresh Thai basil."
+      }
+    ],
+    "createdAt": "2026-02-18T19:30:00.000Z",
+    "updatedAt": "2026-02-18T19:30:00.000Z"
+  },
+  {
+    "id": "recipe-012",
+    "title": "Classic Smash Burger with Secret Sauce",
+    "description": "Double custom beef blend smashed super thin on a smoking hot flat top for crisp caramelized edges, melted American cheese, and tangy pickle sauce on a toasted potato bun.",
+    "category": "Lunch",
+    "cuisine": "American",
+    "difficulty": "Easy",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 10,
+    "servings": 2,
+    "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80",
+    "authorId": "user-foodie-003",
+    "authorName": "Alex Rivera",
+    "averageRating": 4.9,
+    "reviewsCount": 5,
+    "favoritesCount": 26,
+    "isFeatured": true,
+    "tags": [
+      "Burger",
+      "Comfort Food",
+      "Fast Casual",
+      "American"
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Freshly ground beef chuck (80/20)",
+        "amount": "350",
+        "unit": "g"
+      },
+      {
+        "id": 2,
+        "name": "Martin’s Potato buns",
+        "amount": "2",
+        "unit": "buns"
+      },
+      {
+        "id": 3,
+        "name": "Deli American cheese slices",
+        "amount": "4",
+        "unit": "slices"
+      },
+      {
+        "id": 4,
+        "name": "Dill pickle slices",
+        "amount": "8",
+        "unit": "slices"
+      },
+      {
+        "id": 5,
+        "name": "Mayonnaise, yellow mustard, and relish",
+        "amount": "1/4",
+        "unit": "cup total"
+      },
+      {
+        "id": 6,
+        "name": "Kosher salt and black pepper",
+        "amount": "1",
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "instruction": "Mix mayo, mustard, relish, garlic powder, and paprika into a smooth burger sauce."
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Butter and toast potato buns on a dry griddle until deep amber; spread sauce on bottom and top buns."
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Divide beef into four loose balls. Place on a screaming hot cast iron pan and smash flat with heavy spatula and parchment paper."
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Cook undisturbed for 2 minutes until outer edges crisp and lace up. Scrape cleanly, flip, and immediately top with cheese."
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Stack two cheesy patties together, top with pickles, transfer to toasted buns, and serve immediately."
+      }
+    ],
+    "createdAt": "2026-02-22T12:00:00.000Z",
+    "updatedAt": "2026-02-22T12:00:00.000Z"
+  },
+  {
+    "id": "recipe-013",
+    "title": "Neapolitan Margherita Pizza with San Marzano & Fior di Latte",
+    "description": "Fermented 48-hour pizza dough baked at blistering heat, topped with crushed San Marzano D.O.P. tomatoes, fresh fior di latte mozzarella, aromatic basil, and olive oil.",
+    "category": "Dinner",
+    "cuisine": "Italian",
+    "difficulty": "Hard",
+    "prepTimeMinutes": 40,
+    "cookTimeMinutes": 10,
+    "servings": 3,
+    "imageUrl": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=900&q=80",
+    "authorId": "user-admin-001",
+    "authorName": "Chef Alessandro Rossi",
+    "averageRating": 5,
+    "reviewsCount": 7,
+    "favoritesCount": 35,
+    "isFeatured": true,
+    "tags": [
+      "Pizza",
+      "Artisan",
+      "Italian",
+      "Vegetarian"
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Tipo 00 flour for dough",
+        "amount": "500",
+        "unit": "g"
+      },
+      {
+        "id": 2,
+        "name": "Fresh Fior di Latte mozzarella",
+        "amount": "250",
+        "unit": "g"
+      },
+      {
+        "id": 3,
+        "name": "San Marzano canned tomatoes, hand-crushed",
+        "amount": "300",
+        "unit": "g"
+      },
+      {
+        "id": 4,
+        "name": "Fresh sweet Italian basil",
+        "amount": "1",
+        "unit": "bunch"
+      },
+      {
+        "id": 5,
+        "name": "Extra virgin olive oil",
+        "amount": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "instruction": "Preheat oven with a heavy pizza stone or steel at maximum temperature (260°C+) for 1 hour."
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Stretch dough ball gently using fingertips from the center outward, maintaining an airy outer cornicione."
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Ladle on hand-crushed San Marzano tomatoes, leaving 1 inch around the edge."
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Tear fresh mozzarella over the sauce, add fresh basil leaves, and drizzle with extra virgin olive oil."
+      },
+      {
+        "stepNumber": 5,
+        "instruction": "Bake for 6-8 minutes until crust is leopard-spotted and cheese is bubbling gold. Slice and savor."
+      }
+    ],
+    "createdAt": "2026-02-25T19:00:00.000Z",
+    "updatedAt": "2026-02-25T19:00:00.000Z"
+  },
+  {
+    "id": "recipe-014",
+    "title": "Matcha Green Tea Chia Seed Pudding Bowl",
+    "description": "Energizing morning breakfast bowl loaded with ceremonial Japanese matcha, chia seeds, creamy almond milk, toasted coconut flakes, and fresh kiwi slices.",
+    "category": "Breakfast",
+    "cuisine": "Asian",
+    "difficulty": "Easy",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 0,
+    "servings": 2,
+    "imageUrl": "https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=900&q=80",
+    "authorId": "user-chef-002",
+    "authorName": "Sarah Jenkins",
+    "averageRating": 4.7,
+    "reviewsCount": 2,
+    "favoritesCount": 13,
+    "isFeatured": false,
+    "tags": [
+      "Vegan",
+      "Superfood",
+      "Breakfast Bowl",
+      "Gluten-Free"
+    ],
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Black chia seeds",
+        "amount": "1/2",
+        "unit": "cup"
+      },
+      {
+        "id": 2,
+        "name": "Unsweetened almond milk",
+        "amount": "1.5",
+        "unit": "cups"
+      },
+      {
+        "id": 3,
+        "name": "Ceremonial grade Uji matcha powder",
+        "amount": "1.5",
+        "unit": "tsp"
+      },
+      {
+        "id": 4,
+        "name": "Pure maple syrup",
+        "amount": "2",
+        "unit": "tbsp"
+      },
+      {
+        "id": 5,
+        "name": "Fresh kiwi and raspberries",
+        "amount": "1",
+        "unit": "cup"
+      },
+      {
+        "id": 6,
+        "name": "Toasted coconut flakes",
+        "amount": "2",
+        "unit": "tbsp"
+      }
+    ],
+    "instructions": [
+      {
+        "stepNumber": 1,
+        "instruction": "Whisk matcha powder with 2 tablespoons of warm water until smooth with no clumps."
+      },
+      {
+        "stepNumber": 2,
+        "instruction": "Add almond milk, maple syrup, and chia seeds. Whisk well to disperse seeds evenly."
+      },
+      {
+        "stepNumber": 3,
+        "instruction": "Let sit for 10 minutes, stir again to prevent settling, then cover and refrigerate overnight."
+      },
+      {
+        "stepNumber": 4,
+        "instruction": "Spoon into bowls, top with sliced kiwi, raspberries, and toasted coconut flakes."
+      }
+    ],
+    "createdAt": "2026-03-01T07:30:00.000Z",
+    "updatedAt": "2026-10-28T11:30:44.460Z"
+  }
+]

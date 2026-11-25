@@ -1,0 +1,24 @@
+[
+  {
+    "id": "comm-001",
+    "recipeId": "recipe-002",
+    "userId": "user-foodie-003",
+    "userName": "Alex Rivera",
+    "userUsername": "alex_foodie",
+    "userAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    "content": "Can I substitute pancetta if I cannot find guanciale locally?",
+    "createdAt": "2026-01-17T11:00:00.000Z",
+    "updatedAt": "2026-01-17T11:00:00.000Z"
+  },
+  {
+    "id": "comm-002",
+    "recipeId": "recipe-002",
+    "userId": "user-admin-001",
+    "userName": "Chef Alessandro Rossi",
+    "userUsername": "admin",
+    "userAvatar": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=400&q=80",
+    "content": "Yes Alex! Pancetta (especially unsmoked cured pork belly) is a great substitute. Just cut it into thick matchsticks.",
+    "createdAt": "2026-01-17T11:30:00.000Z",
+    "updatedAt": "2026-01-17T11:30:00.000Z"
+  }
+]

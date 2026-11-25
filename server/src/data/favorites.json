@@ -1,0 +1,48 @@
+[
+  {
+    "id": "fav-001",
+    "userId": "user-admin-001",
+    "recipeId": "recipe-001",
+    "createdAt": "2026-01-16T10:00:00.000Z"
+  },
+  {
+    "id": "fav-003",
+    "userId": "user-foodie-003",
+    "recipeId": "recipe-002",
+    "createdAt": "2026-01-18T10:00:00.000Z"
+  },
+  {
+    "id": "fav-004",
+    "userId": "user-foodie-003",
+    "recipeId": "recipe-006",
+    "createdAt": "2026-01-26T10:00:00.000Z"
+  },
+  {
+    "id": "f519ddd8-008b-4988-9ed9-17ea576b3a3d",
+    "userId": "user-chef-002",
+    "recipeId": "recipe-007",
+    "createdAt": "2026-10-25T12:34:28.875Z",
+    "updatedAt": "2026-10-25T12:34:28.875Z"
+  },
+  {
+    "id": "05f7f09f-948d-4b4b-854e-58ac8798f658",
+    "userId": "fd9cdfc4-331d-4516-8275-bdbf34398721",
+    "recipeId": "recipe-014",
+    "createdAt": "2026-10-26T12:08:38.744Z",
+    "updatedAt": "2026-10-26T12:08:38.744Z"
+  },
+  {
+    "id": "142731ea-8c72-4aba-906a-d7f936e8278a",
+    "userId": "fd9cdfc4-331d-4516-8275-bdbf34398721",
+    "recipeId": "recipe-010",
+    "createdAt": "2026-10-26T12:08:43.642Z",
+    "updatedAt": "2026-10-26T12:08:43.642Z"
+  },
+  {
+    "id": "30cff396-177f-421d-b275-21e0b385d9bd",
+    "userId": "user-chef-002",
+    "recipeId": "recipe-014",
+    "createdAt": "2026-10-28T11:30:44.448Z",
+    "updatedAt": "2026-10-28T11:30:44.448Z"
+  }
+]

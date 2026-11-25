@@ -1,0 +1,54 @@
+[
+  {
+    "id": "user-admin-001",
+    "name": "Chef Alessandro Rossi",
+    "username": "admin",
+    "email": "admin@flavouriz.com",
+    "passwordHash": "$2a$10$QfJvegjNvgaEV1q6OE7Wf.8vBuJiTE2703DwCB4irRoyiloKU2Ygm",
+    "role": "admin",
+    "bio": "Executive Chef, culinary educator, and platform moderator at Flavouriz. Passionate about authentic Mediterranean cuisine.",
+    "avatar": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=400&q=80",
+    "isActive": true,
+    "createdAt": "2026-01-01T08:00:00.000Z",
+    "updatedAt": "2026-10-25T12:38:28.274Z"
+  },
+  {
+    "id": "user-chef-002",
+    "name": "Sarah Jenkins",
+    "username": "sarah_cooks",
+    "email": "sarah@flavouriz.com",
+    "passwordHash": "$2a$10$GVOmT9WaKcRrsXF2JwZzOO6Pqa15o5mV6/QqbyUlT6id0A1CR.vFS",
+    "role": "user",
+    "bio": "Pastry chef and sourdough enthusiast. I believe cooking brings friends and families closer together.",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
+    "isActive": true,
+    "createdAt": "2026-01-05T10:00:00.000Z",
+    "updatedAt": "2026-01-05T10:00:00.000Z"
+  },
+  {
+    "id": "user-foodie-003",
+    "name": "Alex Rivera",
+    "username": "alex_foodie",
+    "email": "alex@flavouriz.com",
+    "passwordHash": "$2a$10$tulc.8EoEtrpBT82EJMmh.Fl4tSE9KOkbRZbK95qJ4415/fdCv.P.",
+    "role": "user",
+    "bio": "Home cook, street-food lover, and spices explorer. Always looking for the next bold punch of flavour.",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    "isActive": true,
+    "createdAt": "2026-01-10T12:00:00.000Z",
+    "updatedAt": "2026-01-10T12:00:00.000Z"
+  },
+  {
+    "id": "fd9cdfc4-331d-4516-8275-bdbf34398721",
+    "name": "BHUMI",
+    "username": "bhumi30",
+    "email": "bhumigoyal129@gmail.com",
+    "passwordHash": "$2a$10$XS48V4uOXh7bmGbpARFmCO9Fn8hS8Tz1ZAfndmb45ZqhgEIygDrCe",
+    "role": "user",
+    "bio": "Excited home cook sharing recipes on Flavouriz!",
+    "avatar": "https://api.dicebear.com/7.x/adventurer/svg?seed=bhumi30",
+    "isActive": true,
+    "createdAt": "2026-10-26T12:04:37.495Z",
+    "updatedAt": "2026-10-26T12:04:37.495Z"
+  }
+]

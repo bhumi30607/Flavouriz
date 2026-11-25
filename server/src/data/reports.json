@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rep-001",
+    "targetType": "comment",
+    "targetId": "comm-sample-spam",
+    "reason": "spam",
+    "details": "Example promotional link detected in community comment section.",
+    "reportedByUserId": "user-foodie-003",
+    "reportedByUsername": "alex_foodie",
+    "status": "resolved",
+    "actionTaken": "delete_content",
+    "adminNotes": "Spam link removed by moderation.",
+    "resolvedByUserId": "user-admin-001",
+    "resolvedAt": "2026-01-20T10:00:00.000Z",
+    "createdAt": "2026-01-20T09:00:00.000Z",
+    "updatedAt": "2026-01-20T10:00:00.000Z"
+  }
+]
