@@ -25,7 +25,8 @@ const COLLECTIONS = [
   'favorites',
   'reviews',
   'comments',
-  'reports'
+  'reports',
+  'collections'
 ];
 
 // Per-collection write lock queue to prevent race conditions

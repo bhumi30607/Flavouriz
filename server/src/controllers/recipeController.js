@@ -7,6 +7,8 @@ export async function getRecipes(req, res, next) {
       success: true,
       data: result.recipes,
       pagination: result.pagination,
+      nextCursor: result.pagination.nextCursor,
+      hasMore: result.pagination.hasMore,
     });
   } catch (error) {
     next(error);

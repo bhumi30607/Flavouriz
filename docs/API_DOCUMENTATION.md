@@ -1,8 +1,10 @@
 # Flavouriz REST API Documentation
 
-This document describes all RESTful API endpoints available in the **Flavouriz** backend server.
+The active MongoDB API is implemented in `backend/` and listens on port `5002` by default. It preserves the frontend's `{ success, data }` response envelope and legacy recipe fields (`imageUrl`, `averageRating`, `reviewsCount`, `authorId`). The original JSON API under `server/` remains available on port `5000`.
 
-- **Base URL:** `http://localhost:5000/api`
+This document describes the Flavouriz REST API endpoints used by the React client.
+
+- **Base URL:** `http://localhost:5002/api`
 - **Content-Type:** `application/json` (or `multipart/form-data` for file uploads)
 - **Authentication:** `Authorization: Bearer <jwt_token>` header or `token` cookie
 

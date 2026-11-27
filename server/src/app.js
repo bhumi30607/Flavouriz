@@ -1,6 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
+import helmet from 'helmet';
+import rateLimit from 'express-rate-limit';
 import { config } from './config/index.js';
 import { requestLogger } from './middleware/loggerMiddleware.js';
 import { errorHandler, notFoundHandler } from './middleware/errorMiddleware.js';
@@ -14,8 +16,13 @@ import reviewRoutes from './routes/reviewRoutes.js';
 import commentRoutes from './routes/commentRoutes.js';
 import reportRoutes from './routes/reportRoutes.js';
 import adminRoutes from './routes/adminRoutes.js';
+import feedRoutes from './routes/feedRoutes.js';
+import collectionRoutes from './routes/collectionRoutes.js';
 
 const app = express();
+
+app.disable('x-powered-by');
+app.use(helmet());
 
 // Request logging middleware
 app.use(requestLogger);
@@ -26,19 +33,28 @@ app.use(
     origin: (origin, callback) => {
       // Allow requests with no origin (like mobile apps, curl, or Postman)
       if (!origin) return callback(null, true);
-      // In development, accept localhost on common Vite ports or configured CLIENT_URL
+      const allowedOrigins = [config.clientUrl, ...config.allowedClientUrls].filter(Boolean);
       if (
-        origin.startsWith('http://localhost:') ||
-        origin.startsWith('http://127.0.0.1:') ||
-        origin === config.clientUrl
+        config.nodeEnv !== 'production' &&
+        (origin.startsWith('http://localhost:') || origin.startsWith('http://127.0.0.1:'))
       ) {
         return callback(null, true);
       }
-      return callback(null, true); // Permissive for college project testing
+      if (allowedOrigins.includes(origin)) return callback(null, true);
+      return callback(new Error('Origin not allowed by CORS'));
     },
     credentials: true,
   })
 );
+
+const authLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  limit: 30,
+  standardHeaders: 'draft-7',
+  legacyHeaders: false,
+});
+
+app.use('/api/auth', authLimiter);
 
 // Body parsers
 app.use(express.json({ limit: '10mb' }));
@@ -69,6 +85,8 @@ app.use('/api/reviews', reviewRoutes);
 app.use('/api/comments', commentRoutes);
 app.use('/api/reports', reportRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/feed', feedRoutes);
+app.use('/api/collections', collectionRoutes);
 
 // 404 Handler for undefined routes
 app.use(notFoundHandler);

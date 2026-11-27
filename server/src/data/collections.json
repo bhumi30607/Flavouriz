@@ -1,0 +1,22 @@
+[
+  {
+    "id": "86f811c8-85f5-40f3-a4fe-cc14a455f1ea",
+    "userId": "bcded69f-6bbc-45bc-a809-ec85bd6e8699",
+    "name": "Test Dinners",
+    "recipeIds": [
+      "5134e019-8792-4633-9c01-c1d04dd95601"
+    ],
+    "createdAt": "2026-11-26T19:14:10.243Z",
+    "updatedAt": "2026-11-26T19:14:10.264Z"
+  },
+  {
+    "id": "adc19923-e207-4c67-b8bc-2f34a5d679f7",
+    "userId": "16b4f6e0-a337-4a40-b76e-74089d382074",
+    "name": "Test Dinners",
+    "recipeIds": [
+      "ec13759f-ee04-43b0-bd49-a6a4bfdb2d44"
+    ],
+    "createdAt": "2026-11-26T19:55:03.846Z",
+    "updatedAt": "2026-11-26T19:55:03.859Z"
+  }
+]

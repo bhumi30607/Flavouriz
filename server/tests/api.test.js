@@ -237,3 +237,96 @@ test('Journey 6: Non-admin users are rejected from admin endpoints (403 Forbidde
   });
   assert.equal(adminStatsRes.status, 403);
 });
+
+test('Journey 7: Follow, collection, feed, shopping-list, and cursor features work', async () => {
+  const register = async (prefix) =>
+    fetch(`${baseUrl}/auth/register`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: prefix,
+        username: `${prefix}_${Date.now()}`,
+        email: `${prefix}_${Date.now()}@example.com`,
+        password: 'Password@123',
+      }),
+    }).then((res) => res.json());
+
+  const chef = await register('ChefFollow');
+  const foodie = await register('FoodieFollow');
+  const chefId = chef.data.user.id;
+  const chefToken = chef.data.token;
+  const foodieToken = foodie.data.token;
+
+  const createRes = await fetch(`${baseUrl}/recipes`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${chefToken}`,
+    },
+    body: JSON.stringify({
+      title: 'Cursor Curry',
+      description: 'A test curry recipe.',
+      category: 'Dinner',
+      cuisine: 'Indian',
+      difficulty: 'Easy',
+      prepTimeMinutes: 10,
+      cookTimeMinutes: 20,
+      servings: 2,
+      ingredients: [
+        { name: 'Rice', amount: '100', unit: 'g' },
+        { name: 'Salt', amount: '1', unit: 'tsp' },
+      ],
+      instructions: [{ stepNumber: 1, instruction: 'Cook and serve.' }],
+    }),
+  });
+  assert.equal(createRes.status, 201);
+  const recipe = (await createRes.json()).data;
+
+  const followRes = await fetch(`${baseUrl}/users/${chefId}/follow`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${foodieToken}` },
+  });
+  assert.equal(followRes.status, 200);
+
+  const feedRes = await fetch(`${baseUrl}/feed?limit=1`, {
+    headers: { Authorization: `Bearer ${foodieToken}` },
+  });
+  assert.equal(feedRes.status, 200);
+  const feed = await feedRes.json();
+  assert.ok(feed.data.some((item) => item.id === recipe.id));
+
+  const collectionRes = await fetch(`${baseUrl}/collections`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${foodieToken}`,
+    },
+    body: JSON.stringify({ name: 'Test Dinners' }),
+  });
+  assert.equal(collectionRes.status, 201);
+  const collection = (await collectionRes.json()).data;
+
+  const addRes = await fetch(`${baseUrl}/collections/${collection.id}/recipes/${recipe.id}`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${foodieToken}` },
+  });
+  assert.equal(addRes.status, 200);
+
+  const shoppingRes = await fetch(`${baseUrl}/collections/shopping-list`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${foodieToken}`,
+    },
+    body: JSON.stringify({ recipeIds: [recipe.id], servings: { [recipe.id]: 4 } }),
+  });
+  assert.equal(shoppingRes.status, 200);
+  const shopping = await shoppingRes.json();
+  assert.equal(shopping.data.find((item) => item.name === 'Rice').amount, 200);
+
+  const cursorRes = await fetch(`${baseUrl}/recipes?limit=1`);
+  assert.equal(cursorRes.status, 200);
+  const cursor = await cursorRes.json();
+  assert.equal(typeof cursor.hasMore, 'boolean');
+  assert.equal(cursor.nextCursor === null || typeof cursor.nextCursor === 'string', true);
+});

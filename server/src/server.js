@@ -5,6 +5,9 @@ import { initStorage } from './services/storageService.js';
 
 async function startServer() {
   try {
+    if (config.nodeEnv === 'production' && !config.jwtSecret) {
+      throw new Error('JWT_SECRET must be configured in production.');
+    }
     // Step 1: Ensure JSON storage files and upload folders are initialized safely
     await initStorage();
     console.log('[Storage] JSON storage layer initialized successfully.');

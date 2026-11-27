@@ -1,6 +1,6 @@
 # Flavouriz — Recipe Sharing & Cooking Community Platform
 
-> **A Full-Stack College Web Development Project** adhering strictly to the prescribed academic syllabus. Built with **React**, **Vite**, **Tailwind CSS**, **Node.js**, **Express.js**, and atomic **JSON-file persistence** (zero external databases required).
+> **A full-stack recipe community** with a completed React/Vite frontend and a MongoDB-backed Express API in `backend/`. The original JSON-persistence server remains available as a legacy academic implementation.
 
 ---
 
@@ -10,7 +10,7 @@
 
 ### Core Philosophy
 * **Syllabus Integrity:** Built strictly using the core technologies taught in college web development modules (Semantic HTML5, CSS3/Tailwind, JavaScript ES6+, Node.js core modules, Express.js REST APIs, JWT, Bcrypt, Multer).
-* **Zero Database Overhead:** No MongoDB, SQL, Firebase, or cloud database credentials are required. Application state persists reliably across server restarts using Node.js core `fs/promises` and `path` with sequential Promise write queues and atomic replacements.
+* **MERN API:** The primary backend uses MongoDB/Mongoose, JWT, bcryptjs, Cloudinary, Helmet, and rate limiting. The separate `server/` folder preserves the original JSON-persistence academic implementation.
 * **Production-Grade UX:** Warm cream (`#F7F3EC`), forest green (`#263D2C`), and terracotta (`#D97A43`) design palette with full mobile responsiveness, skeleton loading states, friendly empty states, and interactive ingredient checklists.
 
 ---
@@ -29,7 +29,7 @@
   * Numbered, step-by-step cooking instructions.
   * Related dishes recommendation carousel.
 * **Authentication & Authorization:**
-  * Secure user registration and login with `bcryptjs` password hashing (10 salt rounds).
+  * Secure user registration and login with `bcryptjs` password hashing.
   * Stateless JSON Web Token (JWT) session management.
   * Role-based access control (`user` vs `admin`).
   * Strict ownership checks on recipes, reviews, and comments (users can only edit/delete their own creations).
@@ -41,8 +41,8 @@
   * Duplicate review prevention (one review per user per recipe, with edit/delete capability).
   * Community question-and-answer discussion thread under every recipe.
 * **Photo Uploads:**
-  * Multipart recipe image uploads handled locally via `Multer` with MIME type filtering (JPEG, PNG, WEBP, GIF) and 5MB size limits.
-  * Seamless online Image URL fallback.
+  * Cloudinary storage supports recipe cover images, ordered step images, and review photos.
+  * Multer size/MIME checks and Sharp content validation run before cloud upload.
 * **Admin Moderation Dashboard:**
   * Platform analytics: total users, active accounts, total recipes, reviews, comments, and pending flags.
   * Recipe category distribution breakdown.
@@ -58,11 +58,11 @@
 
 | Layer | Technologies Used |
 | :--- | :--- |
-| **Frontend** | HTML5, CSS3, JavaScript ES6+, React 18, Vite, Tailwind CSS 3, React Router v6, Lucide Icons, Fetch API |
-| **Backend** | Node.js (v18+), Express.js 4, ES Modules (`import`/`export`), RESTful Architecture, Express Middleware |
-| **Data Persistence** | Node.js Core File System (`fs/promises`), Path (`path`), Atomic JSON Storage Service |
-| **Authentication** | JSON Web Tokens (`jsonwebtoken`), Salted Hashing (`bcryptjs`), Cookie Parser |
-| **File Uploads** | Multer (local disk storage with strict MIME/size filters) |
+| **Frontend** | React 18, Vite, Tailwind CSS 3, React Router v6, Axios, Lucide Icons |
+| **Backend** | Node.js, Express 5, Mongoose, REST API |
+| **Data Persistence** | MongoDB Atlas (local MongoDB supported for development) |
+| **Authentication** | JSON Web Tokens (`jsonwebtoken`), `bcryptjs`, role-based middleware |
+| **File Uploads** | Cloudinary, signed upload authorization, Multer and Sharp validation |
 | **Testing** | Node.js Built-in Test Runner (`node --test`), Node Assert (`node:assert/strict`), Postman |
 
 ---
@@ -70,7 +70,7 @@
 ## 🚀 Quick Start Guide
 
 ### 1. Prerequisites
-Ensure **Node.js** (v18.0.0 or later) and **NPM** (v9+) are installed:
+Ensure **Node.js** (v20.19.0 or later for Mongoose 9) and **NPM** (v9+) are installed:
 ```bash
 node -v
 npm -v
@@ -79,30 +79,32 @@ npm -v
 ### 2. Install Dependencies
 Run from the root directory:
 ```bash
-# Installs dependencies for both server and client
+# Installs dependencies for the MongoDB API and React client
 npm run setup
 ```
 
-### 3. Initialize Sample Seed Data
-Populate 14 realistic sample recipes across all meal categories and world cuisines, along with sample users and reviews:
+### 3. Configure and seed development data
+Copy `backend/.env.example` to `backend/.env`. The default MongoDB URI is local; replace it with your Atlas URI when required. Seed the existing sample recipes and demo accounts:
 ```bash
-npm run seed
+npm --prefix backend run seed:demo
 ```
 
 ### 4. Start Development Servers
 Open two terminal windows:
 
-* **Terminal 1 (Backend API on port 5000):**
+* **Terminal 1 (MongoDB API on port 5002):**
   ```bash
-  npm run server
+  npm run backend:dev
   ```
-  *Health check:* `http://localhost:5000/api/health`
+  *Health check:* `http://localhost:5002/api/health`
 
 * **Terminal 2 (Frontend Client on port 5173):**
   ```bash
   npm run client
   ```
-  *Open in browser:* `http://localhost:5173`
+  *Open in browser:* `http://localhost:5173` (Vite proxies `/api` to port 5002)
+
+The original JSON-backed API can still be run separately with `npm run server:dev` on port 5000.
 
 ---
 
@@ -124,7 +126,7 @@ Execute the automated backend API test suite:
 ```bash
 npm test
 ```
-Verifies all key user journeys (public browsing, registration, duplicate checks, login verification, recipe CRUD, ownership authorization, admin route protection, and error handling).
+Requires a local MongoDB instance or `MONGODB_TEST_URI`; exercises authentication, recipe CRUD/search/cursors, reviews/comments, favorites, collections, shopping lists, follows/feed, moderation, and upload validation. The original JSON server suite remains available with `npm run test:legacy`.
 
 ---
 

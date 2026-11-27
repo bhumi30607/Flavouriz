@@ -26,6 +26,7 @@ export async function getRecipes(queryParams = {}) {
     limit = 9,
     authorId = '',
     featured = '',
+    cursor = '',
   } = queryParams;
 
   let recipes = await storage.readAll('recipes');
@@ -105,13 +106,29 @@ export async function getRecipes(queryParams = {}) {
     }
   });
 
-  // Pagination
+  // Cursor pagination (stable sort + ID tie-breaking)
   const total = recipes.length;
-  const currentPage = Math.max(1, parseInt(page, 10) || 1);
   const itemsPerPage = Math.max(1, Math.min(50, parseInt(limit, 10) || 9));
-  const totalPages = Math.ceil(total / itemsPerPage) || 1;
-  const startIndex = (currentPage - 1) * itemsPerPage;
+  let startIndex = 0;
+
+  if (cursor) {
+    try {
+      const cursorId = Buffer.from(cursor, 'base64url').toString('utf8').split('|')[0];
+      const cursorIndex = recipes.findIndex((recipe) => String(recipe.id) === cursorId);
+      if (cursorIndex >= 0) startIndex = cursorIndex + 1;
+    } catch (_) {}
+  }
+
   const paginatedRecipes = recipes.slice(startIndex, startIndex + itemsPerPage);
+  const hasMore = startIndex + itemsPerPage < recipes.length;
+  const lastRecipe = paginatedRecipes.at(-1);
+  const nextCursor = hasMore && lastRecipe
+    ? Buffer.from(`${lastRecipe.id}|${lastRecipe.createdAt}`).toString('base64url')
+    : null;
+  const currentPage = cursor
+    ? 1
+    : Math.max(1, parseInt(page, 10) || 1);
+  const totalPages = Math.ceil(total / itemsPerPage) || 1;
 
   return {
     recipes: paginatedRecipes,
@@ -120,8 +137,10 @@ export async function getRecipes(queryParams = {}) {
       page: currentPage,
       limit: itemsPerPage,
       totalPages,
-      hasNextPage: currentPage < totalPages,
-      hasPrevPage: currentPage > 1,
+      hasNextPage: hasMore,
+      hasPrevPage: false,
+      nextCursor,
+      hasMore,
     },
   };
 }

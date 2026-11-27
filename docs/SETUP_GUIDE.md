@@ -7,7 +7,7 @@ Welcome to **Flavouriz**. This guide details how to install, configure, run, and
 ## 1. Prerequisites
 
 Before getting started, make sure you have the following installed on your operating system:
-* **Node.js:** v18.0.0 or higher (v20+ recommended). Check with:
+* **Node.js:** v20.19.0 or higher (required by Mongoose 9). Check with:
   ```bash
   node -v
   ```
@@ -16,7 +16,7 @@ Before getting started, make sure you have the following installed on your opera
   npm -v
   ```
 * **Web Browser:** Google Chrome, Mozilla Firefox, or Microsoft Edge.
-* **Database Requirement:** None! In strict accordance with the syllabus, this project requires **no external database engine** (no MongoDB, MySQL, Postgres, or Firebase). All data persists cleanly using Node.js core `fs/promises` inside `server/src/data/*.json`.
+* **Database:** MongoDB 6+ locally or a MongoDB Atlas URI for the primary API in `backend/`.
 
 ---
 
@@ -29,9 +29,18 @@ FLAVOURIZ/
 │   │   ├── components/  # Reusable UI components (Navbar, RecipeCard, etc.)
 │   │   ├── context/     # AuthContext and ToastContext
 │   │   ├── pages/       # 13 required pages
-│   │   └── services/    # Fetch API abstraction (api.js)
+│   │   └── services/    # Axios API abstraction (api.js)
 │   ├── package.json
-│   └── vite.config.js   # Configured with proxy to :5000
+│   └── vite.config.js   # Configured with proxy to :5002
+│
+├── backend/              # Primary Express + Mongoose + MongoDB API
+│   ├── config/           # MongoDB and Cloudinary configuration
+│   ├── controllers/      # API request handlers
+│   ├── middleware/       # JWT auth, image upload, rate limit, errors
+│   ├── models/           # Mongoose schemas and indexes
+│   ├── routes/           # REST endpoint declarations
+│   ├── services/         # Business logic and Cloudinary pipeline
+│   └── server.js         # MongoDB API bootstrap
 │
 ├── server/              # Node.js + Express.js Backend
 │   ├── src/
@@ -72,47 +81,39 @@ FLAVOURIZ/
 ### Step 1: Install Dependencies
 From the root folder, run:
 ```bash
-# Option A: One-step automated setup
+# Installs the MongoDB API and React client
 npm run setup
 
-# Option B: Manual per-folder install
-cd server && npm install
-cd ../client && npm install
+# Install only the legacy JSON API if you need it
+npm --prefix server install
 ```
 
 ---
 
 ### Step 2: Configure Environment Variables
 
-The server comes with `.env.example`. A `.env` file is generated automatically with sensible development defaults:
+Copy `backend/.env.example` to `backend/.env` and replace the JWT placeholder. Development defaults use local MongoDB; for Atlas, provide your own `MONGODB_URI`. Cloudinary values are required only for persistent image uploads.
 
-`server/.env`:
+`backend/.env`:
 ```env
-PORT=5000
+PORT=5002
 NODE_ENV=development
-JWT_SECRET=flavouriz_super_secret_jwt_key_2026_exam_dev
+MONGODB_URI=mongodb://127.0.0.1:27017/flavouriz_dev
+JWT_SECRET=replace_with_a_long_random_secret
 JWT_EXPIRES_IN=7d
 CLIENT_URL=http://localhost:5173
-DATA_DIR=./src/data
-UPLOADS_DIR=./src/uploads
 MAX_FILE_SIZE=5242880
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
 ```
 
 ---
 
-### Step 3: Populate Sample Seed Data
-Initialize the 14 realistic sample recipes, demo users, reviews, and comments:
+### Step 3: Seed Optional Development Demo Data
+The opt-in development seed imports sample recipes and creates demo accounts; it refuses to run in production:
 ```bash
-npm run seed
-```
-Output will confirm:
-```
-✅ Flavouriz database seeded successfully!
-   Users:     3 (1 admin, 2 chefs/foodies)
-   Recipes:   14 across all categories & cuisines
-   Reviews:   4
-   Comments:  2
-   Favorites: 4
+npm --prefix backend run seed:demo
 ```
 
 ---
@@ -121,23 +122,24 @@ Output will confirm:
 
 You can start the backend and frontend in two separate terminals:
 
-### Terminal 1: Backend Server (Port 5000)
+### Terminal 1: MongoDB API (Port 5002)
 ```bash
-npm run server
-# Or with auto-reload during development:
-npm run server:dev
+npm run backend:dev
+# Or without auto-reload:
+npm run backend
 ```
-* API Health Check: `http://localhost:5000/api/health`
+* API Health Check: `http://localhost:5002/api/health`
 
 ### Terminal 2: Frontend Client (Port 5173)
 ```bash
 npm run client
 ```
 * Open in browser: `http://localhost:5173`
+* Vite proxies `/api` to the MongoDB API on port `5002`.
 
 ---
 
-## 5. Ready-to-Use Demo Accounts (Viva & Evaluation)
+## 5. Demo Accounts (after optional seed)
 
 | Role | Email | Password | Access Privileges |
 | :--- | :--- | :--- | :--- |
@@ -145,17 +147,17 @@ npm run client
 | **Chef** | `sarah@flavouriz.com` | `Chef@12345` | Recipe CRUD, reviews, favorites, profile |
 | **Foodie** | `alex@flavouriz.com` | `Foodie@12345` | Recipe CRUD, comments, reviews, cookbook |
 
-*Note: The login page provides **1-click quick login buttons** so examiners can switch personas instantly.*
+The login page provides quick-login buttons for the admin and chef accounts. Seeding is opt-in and intended only for a local development database.
 
 ---
 
 ## 6. Running Automated Tests
 
-Run the built-in test suite:
+Run the backend integration suite (a MongoDB instance must be available):
 ```bash
 npm test
 ```
-All route journeys will execute against an in-memory test instance without modifying production seed data.
+It uses the separate `flavouriz_backend_test` database and drops that test database before and after the run.
 
 ---
 
