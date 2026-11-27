@@ -169,7 +169,7 @@ npm run demo:modules:esm
 * **[REST API Documentation](docs/API_DOCUMENTATION.md):** Complete specifications of all endpoints, parameters, request bodies, and HTTP status codes.
 * **[Setup & Installation Guide](docs/SETUP_GUIDE.md):** Detailed environment configuration and developer debugging tips.
 * **[Postman Testing Guide](docs/POSTMAN_TESTING.md):** Instructions for manual endpoint testing and verification.
-* **[Postman Collection JSON](docs/flavouriz.postman_collection.json):** Ready-to-import Postman collection.
+* **[Postman Collection JSON](docs/flavouriz.postman_collection.json):** Ready-to-import Postman collection.and other dependencies.
 
 ---
 
