@@ -1,4 +1,4 @@
-# Flavouriz — Recipe Sharing & Cooking Community Platform
+# Flavouriz — Recipe Sharing & Cooking Community Platform 
 
 > **A full-stack recipe community** with a completed React/Vite frontend and a MongoDB-backed Express API in `backend/`. The original JSON-persistence server remains available as a legacy academic implementation.
 
@@ -67,7 +67,7 @@
 
 ---
 
-## 🚀 Quick Start Guide
+## 🚀 Quick Start Guide with all the key feTURES
 
 ### 1. Prerequisites
 Ensure **Node.js** (v20.19.0 or later for Mongoose 9) and **NPM** (v9+) are installed:
